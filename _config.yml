@@ -1,64 +1,60 @@
 # Site settings
 title: Problem-Solver
-email: poushali.chattopadhyay11@gmail.com
-url: https://github.com/jeromelachaud/freelancer-theme
+email: "poushali.chattopadhyay11@gmail.com"
+url: "https://github.com/jeromelachaud/freelancer-theme"
 description: "Hi there, I'm Poushali, Turning Coffee, Code, and Innovation into Secure Solutions"
-skills: "Web Developement - Cyber Security - Machine Learning"
-meta_author: LastName FirstName
+skills: "Web Development - Cyber Security - Machine Learning"
+meta_author: "Poushali Chattopadhyay"
 
 # Google webmaster tools
 google_verify:
 
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+# Bing verification
 bing_verify:
 
-# Contact form:
-# - static : pass through formspree.io to validate email sending
-# - disqus : replace contact form by disqus thread
-# - comment the line below if you want to stick with the default PHP contact form
+# Contact form settings
 contact: static
 
-# If you use disqus you need disqus shortname
-# https://help.disqus.com/customer/portal/articles/466208
-disqus_shortname: myshortname
+# If you use Disqus, set the shortname; otherwise, comment it out
+# disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 18bc9c #80B3FF
-  primary-rgb: "24,288,156" #"128,179,255"
-  secondary: 2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
+  primary: "18bc9c"
+  primary-rgb: "24,188,156"
+  secondary: "2c3e50"
+  secondary-dark: "233140"
 
 # Footer settings
 footer:
-  copyright: Poushali Chattopadhyay
-  location: Bengaluru, Karnataka, India
-  social: Around the Web
-  credits: Credits
+  copyright: "Poushali Chattopadhyay"
+  location: "Bengaluru, Karnataka, India"
+  social: "Around the Web"
+  credits: "Credits"
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+# Social networks
 social:
-  - title: facebook
-    url: https://www.linkedin.com/in/poushali-chattopadhyay/
+  - title: linkedin
+    url: "https://www.linkedin.com/in/poushali-chattopadhyay/"
   - title: github
-    url: http://github.com/jekyll
+    url: "https://github.com/poushali-chattopadhyay"
 
-# Postal address (add as many lines as necessary)
+# Postal address
 address:
-  - line: Bengaluru
-  - line: Karnataka, India
+  - line: "Bengaluru"
+  - line: "Karnataka, India"
 
 # Credits content
-credits: 'Hi there! I'm Poushali. ☕ Turning Coffee, Code, and Innovation into Secure Solutions 💻🔐'
+credits: "Hi there! I'm Poushali. ☕ Turning Coffee, Code, and Innovation into Secure Solutions 💻🔐"
 
 # Build settings
 markdown: kramdown
 permalink: pretty
 
-#for posts
+# Default settings for posts
 defaults:
   - scope:
       path: ""
       type: "posts"
     values:
-      permalink: ""
+      permalink: "/:categories/:title/"
