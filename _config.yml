@@ -30,7 +30,7 @@ footer:
   copyright: "Poushali Chattopadhyay"
   location: "Address"
   social: "Around the Web"
-  credits: "Credits"
+  credits: "Hobbies"
 
 # Social networks
 social:
@@ -45,7 +45,7 @@ address:
   - line: "Karnataka, India"
 
 # Credits content
-credits: "Turning Coffee, Code, and Innovation into Secure Solutions 💻🔐"
+credits: "Code- Music - Fitness Freak"
 
 # Build settings
 markdown: kramdown
