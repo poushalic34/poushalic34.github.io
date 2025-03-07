@@ -8,26 +8,34 @@
       </div>
     </div>
 
-    {% for post in site.posts limit:4 %}
-      {% if forloop.index0 mod 2 == 0 %}
-      <div class="row"> <!-- Start a new row every 2 posts -->
-      {% endif %}
-      
-        <div class="col-md-6 portfolio-flex-item portfolio-item">
-          <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-2x"></i>
-              </div>
-            </div>
-            <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
-          </a>
-        </div>
+    <div class="container">
+      {% for post in site.posts limit:4 %}
+        {% if forloop.index0 mod 2 == 0 %}
+        <div class="row"> <!-- Start a new row every 2 posts -->
+        {% endif %}
 
-      {% if forloop.index0 mod 2 == 1 or forloop.last %}
-      </div> <!-- Close row after every 2 posts or on the last post -->
-      {% endif %}
-    {% endfor %}
-    
+          <div class="col-md-6 col-sm-6 portfolio-flex-item portfolio-item">
+            <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-2x"></i>
+                </div>
+              </div>
+              <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+            </a>
+          </div>
+
+        {% if forloop.index0 mod 2 == 1 or forloop.last %}
+        </div> <!-- Close row after every 2 posts or on the last post -->
+        {% endif %}
+      {% endfor %}
+    </div>
+
   </div>
 </section>
+<style>
+  .portfolio-item {
+  width: 50% !important; /* Force 2 items per row */
+  max-width: 50% !important;
+}
+</style>
