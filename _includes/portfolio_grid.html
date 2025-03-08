@@ -1,4 +1,4 @@
-<!-- Portfolio Grid Section -->
+<!-- Projects Section -->
 <section id="portfolio">
   <div class="container portfolio-flex-grid">
     <div class="row">
@@ -7,20 +7,108 @@
         <hr class="star-primary">
       </div>
     </div>
-    <div class="portfolio-flex-row">
-  {% for post in site.posts %}
-    
+
+    <div class="row">
+      <!-- Project 1 -->
       <div class="col-md-6 portfolio-flex-item portfolio-item">
-        <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x"></i>
-            </div>
-          </div>
-          <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
-        </a>
+        <div class="project-box" data-toggle="modal" data-target="#projectModal1">
+          <h3>AudioVibe.ai</h3>
+          <p>Sentiment Analysis of an audio</p>
+        </div>
       </div>
-  {% endfor %}
+
+      <!-- Project 2 -->
+      <div class="col-md-6 portfolio-flex-item portfolio-item">
+        <div class="project-box" data-toggle="modal" data-target="#projectModal2">
+          <h3>E-Nirvachan</h3>
+          <p>E-voting using blockchain</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Project 3 -->
+      <div class="col-md-6 portfolio-flex-item portfolio-item">
+        <div class="project-box" data-toggle="modal" data-target="#projectModal3">
+          <h3>ByteBid: AI Laptop Price Predictor</h3>
+          <p>Predicts laptop prices using machine learning</p>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="col-md-6 portfolio-flex-item portfolio-item">
+        <div class="project-box" data-toggle="modal" data-target="#projectModal4">
+          <h3>ShopSphere (In-progress)</h3>
+          <p>An AI-powered E-commerce platform</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
+<!-- Project Modals -->
+<div class="modal fade" id="projectModal1" tabindex="-1" role="dialog">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
+    <h2>AudioVibe.ai</h2>
+    <p>Sentiment Analysis of an audio</p>
+    <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
+  </div>
+</div>
+
+<div class="modal fade" id="projectModal2" tabindex="-1" role="dialog">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
+    <h2>E-Nirvachan</h2>
+    <p>E-voting using blockchain</p>
+    <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
+  </div>
+</div>
+
+<div class="modal fade" id="projectModal3" tabindex="-1" role="dialog">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
+    <h2>ByteBid: AI Laptop Price Predictor</h2>
+    <p>Predicts laptop prices using machine learning</p>
+    <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
+  </div>
+</div>
+
+<div class="modal fade" id="projectModal4" tabindex="-1" role="dialog">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
+    <h2>ShopSphere (In-progress)</h2>
+    <p>An AI-powered E-commerce platform</p>
+    <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
+  </div>
+</div>
+<style>
+  .project-box {
+  background: #18bc9c;
+  color: #fff;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project-box:hover {
+  background: #2c3e50;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.close-modal {
+  text-align: right;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+</style>
