@@ -45,7 +45,7 @@
 
 .timeline-item {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 50px; /* Increased gap between boxes */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -53,10 +53,11 @@
 
 .timeline-content {
   background: #fff;
-  padding: 15px;
+  padding: 20px;
   border-radius: 8px;
   width: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .timeline-content.right {
@@ -69,14 +70,16 @@
   border-right: 4px solid #2c3e50;
 }
 
+/* Styling the arrow */
 .timeline-arrow {
   text-align: center;
-  margin: -15px 0;
+  margin-bottom: 50px; /* Added more space for the arrow */
 }
 
 .timeline-arrow i {
   font-size: 24px;
   color: #18bc9c;
+  display: block;
 }
 
 </style>
