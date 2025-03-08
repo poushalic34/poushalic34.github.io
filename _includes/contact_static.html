@@ -39,49 +39,51 @@
   </div>
 </section>
 <style>
-  .timeline {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.timeline-item {
-  position: relative;
-  margin-bottom: 50px; /* Increased gap between boxes */
-  width: 100%;
+  .project-box {
+  background: #18bc9c;
+  color: #fff;
+  padding: 15px;
+  width: 300px;  /* Fixed width */
+  height: 300px; /* Fixed height to make it square */
+  margin: 10px auto; /* Centering the boxes */
+  text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* 3D effect */
+  border: 2px solid #2c3e50; /* Outline effect */
 }
 
-.timeline-content {
+.project-box:hover {
+  background: #2c3e50;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+}
+
+
+.modal-content {
   background: #fff;
   padding: 20px;
   border-radius: 8px;
-  width: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-}
-
-.timeline-content.right {
-  text-align: right;
-  border-left: 4px solid #18bc9c;
-}
-
-.timeline-content.left {
-  text-align: left;
-  border-right: 4px solid #2c3e50;
-}
-
-/* Styling the arrow */
-.timeline-arrow {
   text-align: center;
-  margin-bottom: 50px; /* Added more space for the arrow */
 }
 
-.timeline-arrow i {
+.close-modal {
+  text-align: right;
+  cursor: pointer;
   font-size: 24px;
-  color: #18bc9c;
-  display: block;
+}
+.row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.col-md-6 {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 </style>
