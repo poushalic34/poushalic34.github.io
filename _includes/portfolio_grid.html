@@ -93,15 +93,15 @@
 </div>
 
 <style>
-/* Ensures project boxes are centered */
+/* Project Box Styling */
 .project-box {
   background: #18bc9c;
   color: #fff;
   padding: 20px;
   width: 100%;
-  max-width: 300px; /* Fixed width */
-  height: 300px; /* Fixed height */
-  margin: 15px auto; /* Centering */
+  max-width: 300px;
+  height: 300px;
+  margin: 15px auto;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -119,7 +119,30 @@
   box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
 }
 
+/* MODAL FIXES */
+.modal {
+  display: block; /* Force visibility */
+  opacity: 1 !important;
+  z-index: 1050;
+}
+
+.modal.fade {
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+.modal.show {
+  opacity: 1;
+}
+
 /* Centering the modal */
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
 .modal-content {
   background: #fff;
   padding: 20px;
@@ -151,7 +174,6 @@
   justify-content: center;
   padding: 10px;
 }
-
 </style>
 
 <!-- Include Bootstrap JavaScript -->
