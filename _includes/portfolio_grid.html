@@ -1,6 +1,6 @@
 <!-- Projects Section -->
 <section id="portfolio">
-  <div class="container">
+  <div class="container portfolio-flex-grid">
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2>Projects</h2>
@@ -8,36 +8,36 @@
       </div>
     </div>
 
-    <div class="row justify-content-center">
+    <div class="row">
       <!-- Project 1 -->
-      <div class="col-md-5">
-        <div class="project-box" data-bs-toggle="modal" data-bs-target="#projectModal1">
+      <div class="col-md-6 portfolio-flex-item portfolio-item">
+        <div class="project-box" data-toggle="modal" data-target="#projectModal1">
           <h3>AudioVibe.ai</h3>
           <p>Sentiment Analysis of an audio</p>
         </div>
       </div>
 
       <!-- Project 2 -->
-      <div class="col-md-5">
-        <div class="project-box" data-bs-toggle="modal" data-bs-target="#projectModal2">
+      <div class="col-md-6 portfolio-flex-item portfolio-item">
+        <div class="project-box" data-toggle="modal" data-target="#projectModal2">
           <h3>E-Nirvachan</h3>
           <p>E-voting using blockchain</p>
         </div>
       </div>
     </div>
 
-    <div class="row justify-content-center">
+    <div class="row">
       <!-- Project 3 -->
-      <div class="col-md-5">
-        <div class="project-box" data-bs-toggle="modal" data-bs-target="#projectModal3">
+      <div class="col-md-6 portfolio-flex-item portfolio-item">
+        <div class="project-box" data-toggle="modal" data-target="#projectModal3">
           <h3>PriceMate</h3>
           <p>Predicts laptop prices using machine learning</p>
         </div>
       </div>
 
       <!-- Project 4 -->
-      <div class="col-md-5">
-        <div class="project-box" data-bs-toggle="modal" data-bs-target="#projectModal4">
+      <div class="col-md-6 portfolio-flex-item portfolio-item">
+        <div class="project-box" data-toggle="modal" data-target="#projectModal4">
           <h3>ShopSphere</h3>
           <p>(In-progress)</p>
           <p>An AI-powered E-commerce platform</p>
@@ -48,60 +48,49 @@
 </section>
 
 <!-- Project Modals -->
-<div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="close-modal" data-bs-dismiss="modal"><i class="fa fa-times"></i></div>
-      <h2>AudioVibe.ai</h2>
-      <p>Sentiment Analysis of an audio</p>
-      <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
-    </div>
+<div class="modal fade" id="projectModal1" tabindex="-1" role="dialog">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
+    <h2>AudioVibe.ai</h2>
+    <p>Sentiment Analysis of an audio</p>
+    <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
   </div>
 </div>
 
-<div class="modal fade" id="projectModal2" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="close-modal" data-bs-dismiss="modal"><i class="fa fa-times"></i></div>
-      <h2>E-Nirvachan</h2>
-      <p>E-voting using blockchain</p>
-      <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
-    </div>
+<div class="modal fade" id="projectModal2" tabindex="-1" role="dialog">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
+    <h2>E-Nirvachan</h2>
+    <p>E-voting using blockchain</p>
+    <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
   </div>
 </div>
 
-<div class="modal fade" id="projectModal3" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="close-modal" data-bs-dismiss="modal"><i class="fa fa-times"></i></div>
-      <h2>PriceMate</h2>
-      <p>Predicts laptop prices using machine learning</p>
-      <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
-    </div>
+<div class="modal fade" id="projectModal3" tabindex="-1" role="dialog">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
+    <h2>ByteBid: AI Laptop Price Predictor</h2>
+    <p>Predicts laptop prices using machine learning</p>
+    <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
   </div>
 </div>
 
-<div class="modal fade" id="projectModal4" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="close-modal" data-bs-dismiss="modal"><i class="fa fa-times"></i></div>
-      <h2>ShopSphere (In-progress)</h2>
-      <p>An AI-powered E-commerce platform</p>
-      <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
-    </div>
+<div class="modal fade" id="projectModal4" tabindex="-1" role="dialog">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
+    <h2>ShopSphere (In-progress)</h2>
+    <p>An AI-powered E-commerce platform</p>
+    <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
   </div>
 </div>
-
 <style>
-/* Project Box Styling */
-.project-box {
+  .project-box {
   background: #18bc9c;
   color: #fff;
-  padding: 20px;
-  width: 100%;
-  max-width: 300px;
-  height: 300px;
-  margin: 15px auto;
+  padding: 15px;
+  width: 300px;  /* Fixed width */
+  height: 300px; /* Fixed height to make it square */
+  margin: 10px auto; /* Centering the boxes */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -110,37 +99,18 @@
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  border: 2px solid #2c3e50;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* 3D effect */
+  border: 2px solid #2c3e50; /* Outline effect */
 }
 
 .project-box:hover {
   background: #2c3e50;
-  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
 }
-
-/* MODAL FIXES */
-.modal {
-  display: block; /* Force visibility */
-  opacity: 1 !important;
-  z-index: 1050;
-}
-
-.modal.fade {
-  opacity: 0;
-  transition: opacity 0.3s linear;
-}
-
-.modal.show {
-  opacity: 1;
-}
-
-/* Centering the modal */
-.modal-dialog {
-  display: flex;
+.modal fade{
+  display: flex !important;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
 }
 
 .modal-content {
@@ -148,33 +118,21 @@
   padding: 20px;
   border-radius: 8px;
   text-align: center;
-  max-width: 500px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-  position: relative;
 }
 
-/* Close button */
 .close-modal {
-  position: absolute;
-  top: 10px;
-  right: 15px;
+  text-align: right;
   cursor: pointer;
   font-size: 24px;
 }
-
-/* Adjust spacing */
 .row {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
-.col-md-5 {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
+.col-md-6 {
+  padding-left: 5px;
+  padding-right: 5px;
 }
+
 </style>
-
-<!-- Include Bootstrap JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
