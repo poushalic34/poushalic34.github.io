@@ -8,9 +8,9 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row justify-content-center">
       <!-- Project 1 -->
-      <div class="col-md-6 portfolio-flex-item portfolio-item">
+      <div class="col-md-6 d-flex justify-content-center">
         <div class="project-box" data-toggle="modal" data-target="#projectModal1">
           <h3>AudioVibe.ai</h3>
           <p>Sentiment Analysis of an audio</p>
@@ -18,7 +18,7 @@
       </div>
 
       <!-- Project 2 -->
-      <div class="col-md-6 portfolio-flex-item portfolio-item">
+      <div class="col-md-6 d-flex justify-content-center">
         <div class="project-box" data-toggle="modal" data-target="#projectModal2">
           <h3>E-Nirvachan</h3>
           <p>E-voting using blockchain</p>
@@ -26,9 +26,9 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row justify-content-center">
       <!-- Project 3 -->
-      <div class="col-md-6 portfolio-flex-item portfolio-item">
+      <div class="col-md-6 d-flex justify-content-center">
         <div class="project-box" data-toggle="modal" data-target="#projectModal3">
           <h3>PriceMate</h3>
           <p>Predicts laptop prices using machine learning</p>
@@ -36,7 +36,7 @@
       </div>
 
       <!-- Project 4 -->
-      <div class="col-md-6 portfolio-flex-item portfolio-item">
+      <div class="col-md-6 d-flex justify-content-center">
         <div class="project-box" data-toggle="modal" data-target="#projectModal4">
           <h3>ShopSphere</h3>
           <p>(In-progress)</p>
@@ -49,78 +49,116 @@
 
 <!-- Project Modals -->
 <div class="modal fade" id="projectModal1" tabindex="-1" role="dialog">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
-    <h2>AudioVibe.ai</h2>
-    <p>Sentiment Analysis of an audio</p>
-    <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
+      <h2>AudioVibe.ai</h2>
+      <p>Sentiment Analysis of an audio</p>
+      <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
+    </div>
   </div>
 </div>
 
 <div class="modal fade" id="projectModal2" tabindex="-1" role="dialog">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
-    <h2>E-Nirvachan</h2>
-    <p>E-voting using blockchain</p>
-    <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
+      <h2>E-Nirvachan</h2>
+      <p>E-voting using blockchain</p>
+      <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
+    </div>
   </div>
 </div>
 
 <div class="modal fade" id="projectModal3" tabindex="-1" role="dialog">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
-    <h2>ByteBid: AI Laptop Price Predictor</h2>
-    <p>Predicts laptop prices using machine learning</p>
-    <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
+      <h2>ByteBid: AI Laptop Price Predictor</h2>
+      <p>Predicts laptop prices using machine learning</p>
+      <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
+    </div>
   </div>
 </div>
 
 <div class="modal fade" id="projectModal4" tabindex="-1" role="dialog">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
-    <h2>ShopSphere (In-progress)</h2>
-    <p>An AI-powered E-commerce platform</p>
-    <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
+      <h2>ShopSphere (In-progress)</h2>
+      <p>An AI-powered E-commerce platform</p>
+      <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
+    </div>
   </div>
 </div>
+
 <style>
-  .project-box {
+/* Project Boxes */
+.project-box {
   background: #18bc9c;
   color: #fff;
-  padding: 15px;
-  width: 300px;  /* Fixed width */
-  height: 300px; /* Fixed height to make it square */
-  margin: 10px auto; /* Centering the boxes */
+  padding: 20px;
+  width: 250px; /* Square shape */
+  height: 250px;
+  margin: 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
   transition: 0.3s;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* 3D effect */
-  border: 2px solid #2c3e50; /* Outline effect */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid #2c3e50;
 }
 
 .project-box:hover {
   background: #2c3e50;
-  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
 }
 
+/* Center the modal */
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
 
 .modal-content {
   background: #fff;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 25px;
+  border-radius: 12px;
   text-align: center;
+  width: 50%;
+  max-width: 500px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-in-out;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Close button */
 .close-modal {
   text-align: right;
   cursor: pointer;
   font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
+
+/* Reduce spacing between project boxes */
 .row {
   margin-left: -5px;
   margin-right: -5px;
@@ -130,5 +168,4 @@
   padding-left: 5px;
   padding-right: 5px;
 }
-
 </style>
