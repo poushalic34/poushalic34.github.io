@@ -1,6 +1,6 @@
 <!-- Projects Section -->
 <section id="portfolio">
-  <div class="container portfolio-flex-grid">
+  <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2>Projects</h2>
@@ -47,60 +47,14 @@
   </div>
 </section>
 
-<!-- Project Modals -->
-<div class="modal fade" id="projectModal1" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
-      <h2>AudioVibe.ai</h2>
-      <p>Sentiment Analysis of an audio</p>
-      <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="projectModal2" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
-      <h2>E-Nirvachan</h2>
-      <p>E-voting using blockchain</p>
-      <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="projectModal3" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
-      <h2>ByteBid: AI Laptop Price Predictor</h2>
-      <p>Predicts laptop prices using machine learning</p>
-      <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="projectModal4" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal"><i class="fa fa-times"></i></div>
-      <h2>ShopSphere (In-progress)</h2>
-      <p>An AI-powered E-commerce platform</p>
-      <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank">GitHub Repository</a>
-    </div>
-  </div>
-</div>
-
 <style>
 /* Project Boxes */
 .project-box {
   background: #18bc9c;
   color: #fff;
   padding: 20px;
-  width: 250px; /* Square shape */
-  height: 250px;
-  margin: 10px;
+  width: 280px; /* Square shape */
+  height: 280px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -137,17 +91,6 @@
   animation: fadeIn 0.3s ease-in-out;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
 /* Close button */
 .close-modal {
   text-align: right;
@@ -160,12 +103,14 @@
 
 /* Reduce spacing between project boxes */
 .row {
-  margin-left: -5px;
-  margin-right: -5px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .col-md-6 {
   padding-left: 5px;
   padding-right: 5px;
+  display: flex;
+  justify-content: center;
 }
 </style>
